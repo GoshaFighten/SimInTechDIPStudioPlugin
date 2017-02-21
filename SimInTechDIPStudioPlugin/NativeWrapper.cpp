@@ -35,11 +35,9 @@ void NativeWrapper::CallPlugin(
 	case f_GetAlgFun: {
 	}; break;
 	default: {
-		CSPlugin::InputObject^ args = gcnew CSPlugin::InputObject();
-		args->Input = input_0;
-		args->W = property_w;
-		CSPlugin::OutputObject^ result = CSPlugin::Plugin::Run(args);
-		state_vars->mydllv2_out_0_ = result->Result;
+		//CSPlugin::InputObject^ args = gcnew CSPlugin::InputObject();
+		//CSPlugin::OutputObject^ result = CSPlugin::Plugin::Run(args);
+		
 	v2___1:
 		;
 
@@ -48,10 +46,10 @@ void NativeWrapper::CallPlugin(
 		GeneratorClassName=TOutPin
 		Name=OutPin7
 		Type=¬ыходной контакт s3 */
-
-		if (isfinite(state_vars->mydllv2_out_0_)) {
-			out_0 = state_vars->mydllv2_out_0_;
-		};
+		for (size_t i = 0; i < imgW * imgH; i++)
+		{
+			out_0[i] = 100000;
+		}
 	}; break;
 	};
 }
