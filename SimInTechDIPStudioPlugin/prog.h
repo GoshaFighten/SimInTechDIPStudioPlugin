@@ -50,11 +50,11 @@ const unsigned int sp_sheme_hash_32 = 1679281830;
 const unsigned int imgW = 1920;
 const unsigned int imgH = 1200;
 
-typedef int imgSize[imgW * imgH];
+typedef double imgSize[imgW * imgH];
 
-const imgSize img_default = { 0 };
+const imgSize img_default = { 0.0 };
 
-const imgSize mydllv0_out_0_default = { 0 };
+const imgSize mydllv0_out_0_default = { 0.0 };
 
 
 const ext_var_info_record ext_vars_names[ext_vars_count] = {
