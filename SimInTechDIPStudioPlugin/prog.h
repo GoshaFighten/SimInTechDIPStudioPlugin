@@ -47,8 +47,8 @@ const unsigned int sp_sheme_hash_32 = 1679281830;
 /* Model maximum iteration count */
 #define INTEGRATION_MAX_LOOP_ITER_COUNT 10
 
-const unsigned int imgW = 1920;
-const unsigned int imgH = 1200;
+const unsigned int imgW = 30;
+const unsigned int imgH = 30;
 
 typedef double imgSize[imgW * imgH];
 
@@ -59,8 +59,8 @@ const imgSize mydllv0_out_0_default = { 0.0 };
 
 const ext_var_info_record ext_vars_names[ext_vars_count] = {
 	{ "out:0", vt_double,{ imgW * imgH }, 0,dir_out,"", (void*)&img_default, sizeof(imgSize) },
-	{ "out:1", vt_int,{ 1 }, 1,dir_out,"", (void*)imgW, sizeof(int) } ,
-	{ "out:2", vt_int,{ 1 }, 2,dir_out,"", (void*)imgH, sizeof(int) }
+	{ "out:1", vt_int,{ 1 }, 1,dir_out,"", (void*)&imgW, sizeof(int) } ,
+	{ "out:2", vt_int,{ 1 }, 2,dir_out,"", (void*)&imgH, sizeof(int) }
 };
 #define out_0 (*(imgSize*)(ext_vars_addr[0]))
 

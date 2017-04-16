@@ -48,7 +48,7 @@ void NativeWrapper::CallPlugin(
 		Type=¬ыходной контакт s3 */
 		for (size_t i = 0; i < imgW * imgH; i++)
 		{
-			out_0[i] = 100000;
+			out_0[i] = 0x00FF00FF;
 		}
 	}; break;
 	};
